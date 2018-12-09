@@ -1,29 +1,43 @@
 # ResAnchor2ch
-文字列中の2chのアンカータグを解析し、リンク化します。
+文字列中の全ての2chのアンカータグを解析し、リンク化します。
 
-
-## Usage
-How to use my plugin.
+#### 入力内容
+```
+>>14 >>15
+このようにアンカータグを指定のパスへのリンクにします。
+```
+#### 実行結果
+<img src="https://i.imgur.com/AdOrqDY.png" width="350px">
+<img src="https://i.imgur.com/YGFrFYF.png" width="300px">
 
 ## Installation
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile:Gemfileへ以下を記入してください
 
 ```ruby
 gem 'res_anchor_2ch'
 ```
 
-And then execute:
+And then execute: ターミナルで以下を実行してください。
 ```bash
-$ bundle
+$ bundle install
 ```
 
-Or install it yourself as:
+Or install it yourself as:　あるいは以下でも可能です
 ```bash
 $ gem install res_anchor_2ch
 ```
+## Usage
+viewの中で以下を記述すれば、リンク化されます。
+```ruby
+<p>
+<%= replace_anchar_to_link(">>1 aaa", "/responses/") %>
+</p>
 
-## Contributing
-Contribution directions go here.
+※simple_formatメソッドに通すことで、改行が適用されます。
+<p>
+<%= simple_format((replace_anchar_to_link(body, "/responses/")) %>
+</p>
+```
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

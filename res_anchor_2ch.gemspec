@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "文字列から2chのレスアンカーの存在を解析し、リンク化します。"
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
 end

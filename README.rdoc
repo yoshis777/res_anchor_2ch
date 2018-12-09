@@ -1,0 +1,3 @@
+= ResAnchor2ch
+
+This project rocks and uses MIT-LICENSE.

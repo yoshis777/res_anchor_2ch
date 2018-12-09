@@ -30,12 +30,12 @@ $ gem install res_anchor_2ch
 viewの中で以下を記述すれば、リンク化されます。
 ```ruby
 <p>
-<%= replace_anchar_to_link(">>1 aaa", "/responses/") %>
+<%= replace_anchar_to_link(">>14 >>15\nこのようにアンカータグを指定のパスへのリンクにします。", "/responses/") %>
 </p>
 
 ※simple_formatメソッドに通すことで、改行が適用されます。
 <p>
-<%= simple_format((replace_anchar_to_link(body, "/responses/")) %>
+<%= simple_format((replace_anchar_to_link(">>14 >>15\nこのようにアンカータグを指定のパスへのリンクにします。", "/responses/")) %>
 </p>
 ```
 

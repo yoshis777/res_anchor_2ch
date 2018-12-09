@@ -1,5 +1,6 @@
 # ResAnchor2ch
 文字列中の全ての2chのアンカータグを解析し、リンク化します。
+Rails用です。application_helperの中に暗黙的にメソッドが追加されます。
 
 #### 入力内容
 ```

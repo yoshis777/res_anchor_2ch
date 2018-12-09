@@ -9,15 +9,12 @@ Gem::Specification.new do |s|
   s.version     = ResAnchor2ch::VERSION
   s.authors     = ["yoshis777"]
   s.email       = [""]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ResAnchor2ch."
-  s.description = "TODO: Description of ResAnchor2ch."
+  s.homepage    = "https://github.com/yoshis777"
+  s.summary     = "Input string convert res anchor link like 2ch comment"
+  s.description = "文字列から2chのレスアンカーの存在を解析し、リンク化します。"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.2.6"
-
-  s.add_development_dependency "sqlite3"
 end
